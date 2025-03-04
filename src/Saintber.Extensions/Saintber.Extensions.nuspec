@@ -8,7 +8,7 @@
     <description>Saintber.Extensions is a utility library that provides extension methods for Dependency Injection and data format conversion. It enhances the flexibility of service registration and simplifies data transformation operations, making development more efficient and maintainable.</description>
 	<readme>README.md</readme>
 	<license type="expression">MIT</license>
-	<repository type="git" url="https://" />
+	<repository type="git" url="https://github.com/saintber/Saintber.Extensions.git" />
     <dependencies>
       <!--<group targetFramework=".NETFramework4.6.2">
       </group>
