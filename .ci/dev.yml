@@ -99,15 +99,15 @@ steps:
     outputDir: '$(Build.ArtifactStagingDirectory)'
 
 # 推送至 GitHub
-- script: |
-    echo "Configuring Git..."
-    git config --global user.email "$(GitHubUserMail)"
-    git config --global user.name "$(GitHubUserName)"
-    git fetch origin
-    git remote set-url origin https://$(GitHubToken)@github.com$(GitHubEndPoint)
-    echo "Pushing to $(PushBranch) branch..."
-    git push -u origin $(PushBranch)
-  displayName: "Push to GitHub $(PushBranch) branch"
+# - script: |
+    # echo "Configuring Git..."
+    # git config --global user.email "$(GitHubUserMail)"
+    # git config --global user.name "$(GitHubUserName)"
+    # git fetch origin
+    # git remote set-url origin https://$(GitHubToken)@github.com$(GitHubEndPoint)
+    # echo "Pushing to $(PushBranch) branch..."
+    # git push -u origin $(PushBranch)
+  # displayName: "Push to GitHub $(PushBranch) branch"
 
 # 推送套件
 - task: NuGetCommand@2
