@@ -4,6 +4,28 @@
     <TargetFrameworks>net9.0;net8.0;net6.0;</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- 套件設定 -->
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+
+    <!-- NuGet Metadata -->
+    <Version>$(PackageVersion)</Version>
+    <PackageId>Saintber.Extensions</PackageId>
+    <Authors>Saintber</Authors>
+    <Owners>Saintber</Owners>
+    <Description>Saintber 製作的擴充函式庫，目前包含相依性注入、Linq/Lambda、交易與時間的擴充方法類別庫。</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/saintber/Saintber.Extensions.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- 包含原始碼與符號 -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
@@ -16,6 +38,10 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.0" />
   </ItemGroup>
 
 </Project>

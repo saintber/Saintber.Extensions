@@ -2,6 +2,9 @@
 
 namespace Saintber.Extensions.Transactions
 {
+    /// <summary>
+    /// 交易擴充方法。
+    /// </summary>
     public static class TransactionExtensions
     {
         /// <summary>

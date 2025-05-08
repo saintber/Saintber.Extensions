@@ -3,6 +3,9 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Saintber.Extensions.DependencyInjection
 {
+    /// <summary>
+    /// 註冊服務集合的擴充方法。
+    /// </summary>
     public static class ServiceCollectionServiceExtensions
     {
         /// <summary>
