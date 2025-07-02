@@ -2,11 +2,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![NuGet](https://img.shields.io/nuget/v/Saintber.Extensions.svg)
 
-> English | [中文說明](#中文說明)
+> English Documentation | [中文說明](#中文說明)
 
 ---
 
-# 📘 English
+# English Documentation
 
 ## Overview
 
@@ -35,6 +35,11 @@ https://github.com/saintber/Saintber.Abstractions
 ### DependencyInjection
 - `ServiceCollectionExtensions` - Provides extension methods for `IServiceCollection`
 	- Register existing instances as specified interfaces (named registration)
+	
+### Enum
+- `EnumExtensions` - Provides extension methods for Enum operations
+	- Try to parse a string to an enum member
+	- Get the Description attribute of an enum member
 
 ### Linq
 - `LinqExtensions` - Provides extension methods for LINQ and Lambda operations
@@ -52,7 +57,7 @@ https://github.com/saintber/Saintber.Abstractions
 	- Create standard transaction scopes with specified timeout and auto-commit behavior (supports async)
 ---
 
-# 📙 中文說明
+# 中文說明
 
 ## 簡介
 
@@ -82,6 +87,11 @@ https://github.com/saintber/Saintber.Extensions
 ### DependencyInjection
 - `ServiceCollectionExtensions` - 提供 IServiceCollection 的擴充方法
 	- 註冊現有實例為指定介面（具名註冊）
+	
+### Enum
+- `EnumExtensions` - 提供列舉函式操作的擴充方法
+	- 嘗試將指定字串解析為列舉型別成員。 
+	- Description 屬性取得
 
 ### Linq
 - `LinqExtensions` - 提供 LINQ 與 Lambda 操作的擴充方法
